@@ -22,7 +22,7 @@ class MyController extends Controller {
                 $noweDane1 = explode(',', $noweDanes['param2']);
 
                 $nowa =  '<body marginwidth="100" marginheight="100" size="7" face="Arial"><i>';   
-                $nowa .='<br/><br/>';//topmargin="1100" bottommargin="1100"
+                $nowa .='<br/><br/>';
                 $nowa .=  '<i>';
                 $nowa .=  '<center><b>'.$noweDane[0].'</b></center>';
                 $sp = explode(":", $noweDane[2]);
@@ -83,31 +83,6 @@ class MyController extends Controller {
                 
                 $nowa .= '</i></body>';
                 
-                $nowa .= '<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><center>Strona 1</center>';
                 echo $nowa;
-
-      /*
-
-                $fp = fopen("test.odt", "w");
-              
-
-                   if(!$nowa) {
-                       echo Yii::$app->getSession()->setFlash('error', 'bad error 404');
-                       
-                   }  else {
-                     fputs($fp, $nowa);   
-                
-                }
-                fclose($fp);
-            if(file_exists("test.odt") && is_file("test.odt"))
-              {
-               $fp = fopen("test.odt", "rb");
-
-               header('Content-Type: application/octet-stream'); //Typ
-               header('Content-Length: ' .filesize("test.odt")); //Rozmiar
-               header('Content-Disposition: filename='.$fp); //Nazwa
-               fpassthru($fp);
-                exit;
-            }
-        */}
+       }
     }
